@@ -1,0 +1,30 @@
+.footer {
+  background-color: map-get(map-get($palette, primary),1);
+  display: flex;
+  flex-direction: row;
+  padding: 20px 50px;
+  color:white;
+  justify-content: space-between;
+  .holder-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .holder-2 {
+    display: flex;
+    flex-direction: column;
+    a {
+      padding: 5px;
+    }
+  }
+
+  .holder-3 {
+    display: flex;
+    align-items: flex-end;
+    .social-icon {
+      margin:5px;
+      cursor: pointer;
+    }
+  }
+}
