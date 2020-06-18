@@ -1,0 +1,36 @@
+.intro-container {
+  padding: 15% 15% 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .title {
+    font-size: $hero-font-size-web;
+    margin-bottom: 0;
+    letter-spacing: $letter-spacing;
+  }
+  .content {
+    font-size: $content-font-size-web;
+    font-weight: 400;
+  }
+  .invest-btn {
+    border: 2px solid white;
+    width:150px;
+    height:50px;
+    border-radius: 27px;
+    font-size: $btn-font-size-web;
+    color:white;
+  }
+
+  .icon {
+    margin: 0 auto;
+    margin-top: 100px;
+    .arrow-icon {
+      width: 30px;
+      
+    }
+  }
+}
+  
+  
+
