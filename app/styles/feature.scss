@@ -1,0 +1,12 @@
+.feature-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px; 
+  .security {
+    display: flex;
+
+    img {
+      width: 300px;
+    }
+  }
+}
