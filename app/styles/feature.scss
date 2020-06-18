@@ -1,12 +1,42 @@
+@import '_color.scss';
+
 .feature-container {
   display: flex;
   flex-direction: column;
-  padding: 20px; 
-  .security {
+  padding: 10vh 15vw; 
+  .title {
+    font-size: $title-font-size-web;
+    color: map-get(map-get($palette, primary),1);
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .security, .mobility {
     display: flex;
-
+    margin-bottom: 50px;
     img {
       width: 300px;
     }
+    .content-holder {
+      padding: 20px 50px 20px 100px;
+    }
+    .mobility-img {
+      width: 200px;
+      padding-left: 50px;
+    }
   }
+
+ 
+
+  .invest {
+    display: flex;
+    margin-bottom: 50px;
+    img {
+      width: 300px;
+     
+    }
+    .content-holder {
+      padding: 20px 100px 20px 0px;
+    }
+  }
+  
 }
