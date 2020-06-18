@@ -1,0 +1,38 @@
+.global-container {
+  display: flex;
+  flex-direction: column;
+  padding:5vh  10vw;
+  .content-holder {
+    display:flex;
+    .title {
+      font-size: $title-font-size-web;
+      color: map-get(map-get($palette, primary), 1);
+      // margin-bottom: 0;
+    }
+    .subholder {
+      padding-right:30px;
+      .subtitle {
+        font-size: $subtitle-font-size-web;
+        margin:0;
+      }
+      .content {
+        font-size: $content-font-size-web;
+        margin-top:0;
+      }
+    }
+  }
+  .global-img {
+    width:600px;
+    margin-right: -10vw;
+  }
+}
+.global-btn {
+  border: 2px solid white;
+  border-radius: 27px;
+  font-size: $btn-font-size-web-sm;
+  color:white;
+  width:180px;
+  height:35px;
+  background-color: map-get(map-get($palette, primary), 5);
+  margin: 0 auto;
+}
