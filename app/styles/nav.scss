@@ -1,0 +1,36 @@
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding:5px;
+  justify-content: space-between;
+  color:white;
+  padding:0 50px;
+  font-size: 18px;
+  padding-top: 30px;
+  .nav-btn {
+    padding:5px 10px;
+    font-size: 14px;
+    
+  }
+
+  .main-menu {
+   
+  }
+
+  .account-menu {
+    margin-right: 0px;
+  }
+  
+  .logo-holder{
+    width: 200px;
+  
+    .logo {
+      width:50px;
+    }
+  }
+  
+  
+}
+
