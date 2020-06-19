@@ -1,9 +1,25 @@
 <nav class="navbar">
-  <div class="logo-holder">Linqto</div>
+  <img class="logo" src="image/logo-horizontal.svg">
   <div class="main-menu">
     <a class="nav-btn">Market</a>
     <a class="nav-btn">About Us</a>
     <a class="nav-btn">News</a>
     <a class="nav-btn">Sign up/Log in</a>
   </div>
+
+  <div class="hamburger-menu">
+    {{#click}}<div class="hamburger"><div class="hamburger-container">
+      <div class="hamburger-line"></div>
+      <div class="hamburger-line"></div>
+    </div></div>{{/click}}
+  </div>
+
+
 </nav>
+
+<div class="side-menu">
+        <a class="nav-btn">Market</a>
+        <a class="nav-btn">About Us</a>
+        <a class="nav-btn">News</a>
+        <a class="nav-btn">Sign up/Log in</a>
+</div>
