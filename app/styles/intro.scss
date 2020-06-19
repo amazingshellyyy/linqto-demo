@@ -4,6 +4,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media screen and (max-width: map-get($breakpoints, medium)) {
+    padding: 5% 15% 5%;
+  }
   .title {
     font-size: $hero-font-size-web;
     margin-bottom: 0;
@@ -28,6 +31,9 @@
     .arrow-icon {
       width: 30px;
       
+    }
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+      margin-top: 50px;
     }
   }
 }

@@ -1,7 +1,13 @@
 .newsletter-container {
   display: flex;
   flex-direction: column;
+  
   padding-bottom: 100px;
+  @media screen and (max-width: map-get($breakpoints, medium)) {
+    padding: 0 40px;
+    padding-bottom: 100px;
+  }
+
   .title {
     font-size: $title-font-size-web;
     color: map-get(map-get($palette, primary), 1);

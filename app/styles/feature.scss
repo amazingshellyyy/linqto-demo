@@ -4,6 +4,10 @@
   display: flex;
   flex-direction: column;
   padding: 10vh 15vw; 
+  @media screen and (max-width: map-get($breakpoints, medium)) {
+    padding: 5vh 15vw; 
+
+  }
   .title {
     font-size: $title-font-size-web;
     color: map-get(map-get($palette, primary),1);
@@ -13,11 +17,20 @@
   .security, .mobility {
     display: flex;
     margin-bottom: 50px;
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      align-items: center;
+    }
     img {
       width: 300px;
     }
     .content-holder {
       padding: 20px 50px 20px 100px;
+      @media screen and (max-width: map-get($breakpoints, medium)) {
+       padding: 20px;
+      }
     }
     .mobility-img {
       width: 200px;
@@ -30,12 +43,20 @@
   .invest {
     display: flex;
     margin-bottom: 50px;
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
     img {
       width: 300px;
      
     }
     .content-holder {
       padding: 20px 100px 20px 0px;
+      @media screen and (max-width: map-get($breakpoints, medium)) {
+        padding: 20px;
+       }
     }
   }
   

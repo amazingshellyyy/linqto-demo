@@ -2,15 +2,23 @@
   display: flex;
   flex-direction: column;
   padding:5vh  10vw;
+  
   .content-holder {
     display:flex;
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
     .title {
       font-size: $title-font-size-web;
       color: map-get(map-get($palette, primary), 1);
-      // margin-bottom: 0;
+     
     }
     .subholder {
       padding-right:30px;
+      @media screen and (max-width: map-get($breakpoints, medium)) {
+        padding-right:0;
+      }
       .subtitle {
         font-size: $subtitle-font-size-web;
         margin:0;
@@ -24,6 +32,10 @@
   .global-img {
     width:600px;
     margin-right: -10vw;
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+      width:100%;
+      margin-right:0;
+    }
   }
 }
 .global-btn {
@@ -35,4 +47,7 @@
   height:50px;
   background-color: map-get(map-get($palette, primary), 5);
   margin: 0 auto;
+  @media screen and (max-width: map-get($breakpoints, medium)) {
+    margin-top: 30px;
+  }
 }
