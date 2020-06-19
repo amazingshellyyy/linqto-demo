@@ -4,7 +4,7 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'linqto-demo',
     environment,
-    rootURL: '.',
+    rootURL: 'linqto-demo',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
