@@ -1,11 +1,18 @@
+@import 'ember-burger-menu';
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+$breakpoints: (
+  small: 480px,
+  medium: 640px,
+  large: 820px,
+  x-large: 1130px
+);
 
+@import '_color.scss';
 @import '_font.scss';
 @import 'nav.scss';
 @import 'intro.scss';
 @import 'feature.scss';
-@import '_color.scss';
 @import 'company.scss';
 @import 'app-section.scss';
 @import 'global.scss';
