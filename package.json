@@ -2,6 +2,7 @@
   "name": "linqto-demo",
   "version": "0.0.0",
   "private": true,
+  "homepage": "./",
   "description": "Small description for linqto-demo goes here",
   "repository": "",
   "license": "MIT",
@@ -11,7 +12,7 @@
     "test": "tests"
   },
   "scripts": {
-    "build": "ember build --environment=production && rm -rf ./docs/* &&cp ./dist/ ./docs/",
+    "build": "ember build --environment=production && rm -rf ./docs/* &&cp -r ./dist/ ./docs/",
     "lint": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*",
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
