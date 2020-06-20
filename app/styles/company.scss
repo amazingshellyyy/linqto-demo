@@ -21,6 +21,7 @@
       padding: 30px;
       @media screen and (max-width: map-get($breakpoints, medium)) {
         padding: 10px;
+        width: 100px;
       }
     }
   }
