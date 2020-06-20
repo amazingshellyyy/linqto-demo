@@ -13,7 +13,7 @@
     letter-spacing: $letter-spacing;
   }
   .content {
-    font-size: $content-font-size-web;
+    font-size: $subtitle-font-size-web;
     font-weight: 400;
   }
   .invest-btn {
@@ -23,6 +23,10 @@
     border-radius: 27px;
     font-size: $btn-font-size-web-xg;
     color:white;
+    &:hover {
+      background-color: white;
+      color:map-get(map-get($palette, primary), 5);
+    }
   }
 
   .icon {
@@ -30,7 +34,7 @@
     margin-top: 100px;
     .arrow-icon {
       width: 30px;
-      
+      cursor: pointer;
     }
     @media screen and (max-width: map-get($breakpoints, medium)) {
       margin-top: 50px;

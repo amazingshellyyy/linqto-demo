@@ -23,7 +23,7 @@ $hamburgerWidth: 31px;
     flex-wrap: nowrap;
     .nav-btn {
       padding: 5px 10px;
-      font-size: 14px;
+      font-size: $content-font-size-web;
     }
     @media screen and (max-width: map-get($breakpoints, medium)) {
       display: none;

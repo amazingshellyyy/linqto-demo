@@ -29,6 +29,7 @@
     color: map-get(map-get($palette, primary), 1);
     text-decoration: underline;
     font-size: $content-font-size-web;
+    cursor: pointer;
     @media screen and (max-width: map-get($breakpoints, medium)) {
       margin-top: 20px;
     }

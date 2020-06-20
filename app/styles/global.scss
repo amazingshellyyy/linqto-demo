@@ -39,7 +39,7 @@
   }
 }
 .global-btn {
-  border: 2px solid white;
+  
   border-radius: 27px;
   font-size: $btn-font-size-web-xg;
   color:white;
@@ -49,5 +49,8 @@
   margin: 0 auto;
   @media screen and (max-width: map-get($breakpoints, medium)) {
     margin-top: 30px;
+  }
+  &:hover {
+    background-color:map-get(map-get($palette, primary), 3) ;
   }
 }

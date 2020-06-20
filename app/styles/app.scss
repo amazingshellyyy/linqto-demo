@@ -7,6 +7,12 @@ $breakpoints: (
   large: 1000px,
   x-large: 1130px
 );
+.btn {
+  border: none;
+  background-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
 
 @import '_color.scss';
 @import '_font.scss';
@@ -29,10 +35,9 @@ body {
   max-height: 700px;
   min-height: 700px;
   background-image: linear-gradient(#077187, #77D2B7);
+  @media screen and (max-width: map-get($breakpoints, medium)) {
+    max-height: 800px;
+    min-height: 800px;
+  }
 }
 
-.btn {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}

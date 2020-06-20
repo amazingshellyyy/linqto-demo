@@ -29,13 +29,15 @@
   .subscribe-btn {
     width: 150px;
     margin: 0 auto;
-    border: 2px solid white;
+    
     border-radius: 27px;
     font-size: $btn-font-size-web-xg;
     color: white;
     width: 150px;
     height: 50px;
     background-color: map-get(map-get($palette, primary), 5);
-    
+    &:hover {
+      background-color:map-get(map-get($palette, primary), 3) ;
+    }
   }
 }
