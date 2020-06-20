@@ -19,15 +19,15 @@
     justify-content: center;
 
     img {
-      width: 100%;
+      width: 150px;
       padding: 30px;
-      height:auto;
-      max-width: 150px;
+      height:75px;
+      
       @media screen and (max-width: map-get($breakpoints, medium)) {
         padding: 10px;
-        width: 100%;
-        max-width: 100px;
-        height:auto;
+        width: 100px;
+       
+        height:50px;
       }
     }
   }
